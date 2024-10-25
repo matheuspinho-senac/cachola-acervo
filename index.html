@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=skillet" />
+    <link rel="icon" href="assets/111.png" type="image/x-icon" >
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+
+    <script src="script.js" defer></script>
+    <title>Acervo Cachola</title>
+</head>
+<body>
+    <div class="teste">
+        
+        <img src="https://themes.odilo.io/SENAC_1174/images/header1.png" alt="Logo Senac" class="logo-senac"> 
+        <img src="https://themes.odilo.io/SENAC_1174/images/header2.png" alt="Logo Cachola" class="logo-cachola"> 
+        <div class="titulo-container">
+        </div>
+    </div>
+
+    <div class="container">
+        <form id="searchForm">
+            <div class="form-row">
+                <div class="form-group eixo-group">
+                    <div class="eixo-group"></div>
+                    <div class="eixo-label-container">
+                        <span class="eixo-label-text">Eixo Tecnológico:
+                        <!-- <div class="icons-container">
+                            <i class="fas fa-briefcase icon" title="Gestão e Negócios"></i>
+                            <i class="fas fa-heartbeat icon" title="Ambiente e Saúde"></i>
+                            <i class="fas fa-chalkboard-teacher icon" title="Desenvolvimento Educacional e Social"></i>
+                            <i class="fas fa-comments icon" title="Informação e Comunicação"></i>
+                            <i class="fas fa-tools icon" title="Infraestrutura"></i>
+                            <i class="fas fa-apple-alt icon" title="Produção Alimentícia"></i>
+                            <i class="fas fa-palette icon" title="Produção Cultural e Design"></i>
+                            <i class="fas fa-leaf icon" title="Recursos Naturais"></i>
+                            <i class="fas fa-shield-alt icon" title="Segurança"></i>
+                            <i class="fas fa-umbrella-beach icon" title="Turismo"></i>
+                            <i class="fas fa-utensils icon" title="Cursos de Gastronomia"></i>
+                        </div> -->
+                        </div>
+                        
+                 
+                    <select id="eixo" name="eixo">
+                        <option value=""></option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="tipoCurso">Tipo de Curso:</label>
+                    <select id="tipoCurso" name="tipoCurso">
+                        <option value="">Selecione...</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="segmento">Segmento:</label>
+                    <select id="segmento" name="segmento">
+                        <option value="">Selecione...</option>
+                    </select>
+                </div>
+              
+                
+            </div>
+
+            <div class="form-row">
+                <div class="form-group keywords">
+                    <label for="palavrasChave" hidden>Palavras-chave:</label>
+                    <input type="text" id="palavrasChave" name="palavrasChave" placeholder="Pesquise por conteúdo, ISBN, nome do curso, competência ou assunto..." autocomplete="off">
+                </div>
+
+                <div class="form-group">
+                    <label for="autor" hidden>Autor:</label>
+                    <input type="text" id="autor" name="autor" placeholder="Digite o nome do autor" autocomplete="off">
+                </div>
+
+                <div class="form-group">
+                    <label for="formato" hidden>Formato:</label>
+                    <select id="formato" name="formato">
+                        <option value="">Todos</option>
+                    </select>
+                </div>
+            </div>
+        </form>
+
+        <p id="quantidadeResultados">0 conteúdos encontrados</p>
+        <div id="results" class="card-container"></div>
+    </div>
+    
+    
+</body>
+
+</html>

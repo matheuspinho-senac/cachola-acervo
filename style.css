@@ -1,0 +1,543 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+}
+
+.eixo-label{
+    font-size: 16px;
+    white-space: nowrap;
+}
+
+.eixo-label-container {
+    display: flex;
+    align-items: center;
+    gap: 8px; /* Ajusta o espaço entre o texto e os ícones */
+    margin-right: 8px;
+}
+
+.eixo-label-text {
+    white-space: nowrap;
+}
+
+.icons-container {
+    display: flex;
+    align-items: center; /* Garante que os ícones fiquem centralizados verticalmente */
+    gap: 6px;  
+    margin-bottom: 6px;
+}
+
+/* Ajuste dos ícones */
+.icon { 
+    font-size: 25px; /* Tamanho dos ícones */
+    color: #666;
+    transition: color 0.3s;
+}
+
+.eixo-group {
+    display: flex;
+    flex-direction: column; /* Para garantir que o label e o select fiquem em coluna */
+    align-items: flex-start; 
+   
+}
+
+.icon:hover {
+    color: #83ed45;
+}
+
+#img-conteudo {
+    max-width: 100%;
+    height: 200px;
+    max-height: 200px;
+    object-fit: contain;
+    margin: 10px auto;
+}
+
+.teste {
+    width: 100%;
+    height: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #000000;
+    padding: 0 20px;
+}
+
+.logo-cachola {
+    max-height: 80px;
+    max-width: 100%;
+    margin-left: 675px;
+   
+}
+
+.logo-senac{
+    max-height: 100px;
+    max-width: 100%;
+    margin-left: 30px;
+}
+
+
+.titulo-container {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.titulo {
+    color: #ffffff;
+    font-size: 30px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1{
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.form-row {
+    display: flex;
+    gap: 15px;
+    width: 100%;
+}
+
+.form-group label {
+    display: block;
+    width: 100%;
+}
+
+.form-row:first-child .form-group {
+    flex: 1;
+}
+
+/* Second row - Keywords, Autor, and Formato */
+.form-row:nth-child(2) .form-group {
+    flex: 1;
+}
+
+/* Make Keywords input larger */
+.form-row:nth-child(2) .form-group.keywords {
+    flex: 2;
+}
+
+select, input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+select {
+    padding: 10px; /* Adiciona um pouco de espaço interno nos selects */
+    height: 40px
+}
+
+select#eixo{
+    margin-top: 4px;
+}
+
+/* Update existing form-group styles */
+.form-group {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+select, input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+/* Cards */
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+   width: 100%;
+    margin: 20px auto;
+}
+
+.card-image {
+    width: 100px;
+    height: auto;
+    margin-right: 20px;
+}
+
+.card-image img {
+    width: 150px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.card {
+    width: 350px; /* Aumente a largura dos cards */
+    display: flex;
+    flex-direction: column; /* O layout do card será em coluna */
+    justify-content: space-between; /* O botão será forçado a ficar na parte inferior */
+    height: 100%; /* Garante que o card ocupe 100% da altura disponível */
+    padding: 20px; /* Adicione um espaçamento interno maior */
+    box-sizing: border-box; /* Inclui o padding no tamanho total do card */
+    margin: 1px; /* Espaçamento entre os cards */
+    border: 1px solid #ddd; /* Borda para os cards */
+    border-radius: 8px; /* Borda levemente arredondada */
+    background-color: #fff; /* Cor de fundo */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+.card-title {
+    text-align: center;
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.card-texts {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.card-texts p {
+    margin: 5px 0;
+    font-size: 14px;
+    color: #555;
+}
+
+.card-content {
+    display: flex;
+    align-items: flex-start;
+    width: 100%;
+}
+
+
+.card-info {
+    flex: 1;
+}
+
+.card-info p {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 8px;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    border: 2px solid #8142e5;
+}
+
+.card h2 {
+    margin-bottom: 15px;
+    font-size: 16px;
+    color: #333;
+    min-height: 40px;
+    line-height: 1.3;
+}
+
+.card p {
+    font-size: 13px;
+    color: #555;
+    margin-bottom: 8px;
+}
+
+.card a {
+    display: inline-flex;
+    align-items: center;
+    text-decoration: none;
+    color: #007bff;
+}
+
+.card a:hover {
+    text-decoration: underline;
+}
+
+/* Visualização em lista */
+.list-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 20px 0;
+}
+
+.list-item {
+    background-color: white;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease;
+}
+
+.list-item:hover {
+    transform: translateX(5px);
+}
+
+.list-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap:20px;
+}
+
+.list-main {
+    flex: 1;
+}
+
+.list-main h3 {
+    margin: 0;
+    font-size: 16px;
+    margin: 5px 0;
+}
+
+.list-author {
+    color: #666;
+    font-size: 14px;
+    margin: 5px 0;
+}
+
+.list-details {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    min-width: 300px;
+
+}
+
+.list-format {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.list-segment {
+    color: #666;
+    font-size: 14px;
+}
+
+.list-button {
+    background-color: #83ed45;
+    color: black;
+    padding: 8px 16px;
+    border-radius: 4px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+    white-space: nowrap;
+}
+
+.list-button:hover {
+    background-color: #5AA603;
+}
+
+/* Paginação */
+.pagination {
+    display: none;
+    
+}
+
+.pagination-button {
+    padding: 8px 12px; /* Ajuste para manter o espaçamento */
+    background-color: #fff;
+    cursor: pointer;
+    color: #423e3e; /* Cor padrão do ícone */
+    transition: color 0.3s; /* Transição suave para a cor */
+    margin: 0 5px; /* Adiciona espaço entre os botões */
+}
+
+.pagination-button:disabled {
+    background-color: #f5f5f5;
+    cursor: not-allowed;
+    color: #999;
+}
+
+.pagination-button:not(:disabled):hover {
+    background-color: #f0f0f0;
+}
+
+.page-info {
+    color: #666;
+}
+
+.card-button {
+    text-align: center;
+    margin-top: auto;
+}
+
+/* Botão de acesso nos cards */
+.access-button {
+    background-color: #83ed45;
+    padding: 12px 20px;
+    font-size: 14px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.access-button:hover {
+    background-color: #366106;
+}
+
+#span-button:hover {
+    color: #ffffff;
+}
+
+#results {
+    display: flex;
+    flex-direction: column; /* Para empilhar elementos verticalmente */
+    margin-bottom: 20px; /* Espaço abaixo do contêiner de resultados */
+}
+
+/* Estilos para paginação */ 
+.pagination-controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    width: 100%;
+}
+
+.pagination-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 24px;
+    color: #423e3e;
+    transition: color 0.3s;
+    padding: 8px;
+    width: 40px;
+    height: 40px;
+}
+
+.pagination-button:hover{
+
+    color: #83ed45;
+}
+
+.pagination-button:disabled {
+    color: #ccc; /* Cor para botões desativados */
+    cursor: not-allowed; /
+}
+
+.page-info {
+    font-size: 16px;
+    color: #333;
+    font-weight: 500;
+    min-width: 120px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Estilos para campos ocultos */
+.hidden-field {
+    display: none;
+}
+
+/* Mostrar campos quando necessário */
+.show-fields .hidden-field {
+    display: block;
+}
+
+.loading-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 16px;
+}
+
+.loading-gif {
+    width: 20px;  /* Ajuste este valor para controlar o tamanho do gif */
+    height: 20px; /* Mantenha a mesma proporção da largura */
+    object-fit: contain;
+}
+
+
+
+/* Responsividade */
+@media (max-width: 1024px) {
+    .card-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .card-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Garantir que os controles de visualização não afetem o grid */
+.view-controls {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.view-button {
+    padding: 8px 16px;
+    border: 1px solid #ddd;
+    background-color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    transition: all 0.3s ease;
+}
+
+.view-button.active {
+    background-color: #83ed45;
+    border-color: #83ed45;
+    color: #000;
+}
+
+.view-button:hover {
+    background-color: #f0f0f0;
+}
+
+.view-button.active:hover {
+    background-color: #6bc936;
+}
+
+/* Remover quaisquer flutuações que possam afetar o layout */
+.card-container::after {
+    content: '';
+    display: table;
+    clear: both;
+}
